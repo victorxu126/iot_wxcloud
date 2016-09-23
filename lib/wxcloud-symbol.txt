@@ -1,0 +1,1338 @@
+In archive libwxcloud.a:
+
+airkiss_account.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_account.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     O .bss	00000001 .hidden login_state
+00000001 g     O .bss	00000001 .hidden devtype
+00000000 g     O .rodata	00000004 .hidden clientven
+00000000 g     O .data	00000021 .hidden deviceid
+00000030 g     O .data	00000021 .hidden venderid
+00000060 g     O .data	00000011 .hidden randomkey
+00000080 g     O .data	00000011 .hidden sessionkey
+000000a0 g     O .data	00000021 .hidden devicekey
+00000000 g     F .irom0.text	00000008 .hidden _airkiss_is_login
+00000008 g     F .irom0.text	00000032 .hidden _airkiss_set_login
+00000000       F *UND*	00000000 _airkiss_handle_event_callback
+0000003c g     F .irom0.text	00000004 .hidden _airkiss_get_devtype
+00000040 g     F .irom0.text	00000007 .hidden _airkiss_client_version
+00000048 g     F .irom0.text	00000043 .hidden _airkiss_setdevid
+00000000       F *UND*	00000000 airkiss_printfImp
+00000000       F *UND*	00000000 airkiss_memset
+00000000       F *UND*	00000000 airkiss_memcpy
+0000008c g     F .irom0.text	00000005 .hidden _airkiss_getdevid
+00000094 g     F .irom0.text	00000043 .hidden _airkiss_setvenderid
+000000d8 g     F .irom0.text	00000005 .hidden _airkiss_getvenderid
+000000e0 g     F .irom0.text	0000001e .hidden airkiss_create_randomkey
+00000000       F *UND*	00000000 airkiss_gettime_ms
+00000000       F *UND*	00000000 airkiss_generatekey
+00000100 g     F .irom0.text	00000005 .hidden _airkiss_get_randomkey
+00000108 g     F .irom0.text	00000005 .hidden _airkiss_get_sessionkey
+00000110 g     F .irom0.text	00000016 .hidden _airkiss_set_sessionkey
+00000128 g     F .irom0.text	00000043 .hidden _airkiss_setdevicekey
+0000016c g     F .irom0.text	00000005 .hidden _airkiss_getdevicekey
+
+
+
+airkiss_autoauth.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_autoauth.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     O .bss	00000001 .hidden auth_running
+00000000 g     F .irom0.text	000000ac .hidden _airkiss_autoauth_loop
+00000000       F *UND*	00000000 _airkiss_longlink_state
+00000000       F *UND*	00000000 _airkiss_is_login
+00000000       F *UND*	00000000 cJSON_CreateObject
+00000000       F *UND*	00000000 airkiss_printfImp
+00000000       F *UND*	00000000 airkiss_mem_free
+00000000       F *UND*	00000000 _airkiss_getdevicekey
+00000000       F *UND*	00000000 cJSON_CreateString
+00000000       F *UND*	00000000 cJSON_AddItemToObject
+00000000       F *UND*	00000000 airkiss_create_randomkey
+00000000       F *UND*	00000000 cJSON_CreateNumber
+00000000       F *UND*	00000000 cJSON_Print
+00000000       F *UND*	00000000 cJSON_Delete
+00000000       F *UND*	00000000 _ak_strlen
+00000000       F *UND*	00000000 _airkiss_start_task
+000000ac g     F .irom0.text	000000ba .hidden _airkiss_autoauth_handleresp
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 airkiss_memset
+00000000       F *UND*	00000000 airkiss_memcpy
+00000000       F *UND*	00000000 cJSON_Parse
+00000000       F *UND*	00000000 cJSON_GetErrorPtr
+00000000       F *UND*	00000000 cJSON_GetObjectItem
+00000000       F *UND*	00000000 _airkiss_set_sessionkey
+00000000       F *UND*	00000000 _airkiss_set_login
+
+
+
+airkiss_core.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_core.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     O .bss	00000001 .hidden ak_init_passed
+00000004 g     O .bss	00000004 .hidden time_record
+00000008 g     O .bss	00000004 .hidden last_time
+0000000c g     O .bss	00000004 .hidden _resp_callback
+00000010 g     O .bss	00000004 .hidden _notify_callback
+00000014 g     O .bss	00000004 .hidden _onevent_callback
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 airkiss_mem_free
+00000000 g     F .irom0.text	0000020d .hidden airkiss_cloud_init
+00000000       F *UND*	00000000 airkiss_printfImp
+00000000       F *UND*	00000000 airkiss_mem_init
+00000000       F *UND*	00000000 cJSON_InitHooks
+00000000       F *UND*	00000000 cryptolib_init
+00000000       F *UND*	00000000 memcpy
+00000000       F *UND*	00000000 _airkiss_longlink_init
+00000000       F *UND*	00000000 strlen
+00000000       F *UND*	00000000 aes_decrypt_cbc
+00000000       F *UND*	00000000 _airkiss_setdevicekey
+00000000       F *UND*	00000000 _airkiss_setvenderid
+00000000       F *UND*	00000000 _airkiss_setdevid
+00000000       F *UND*	00000000 _airkiss_getvenderid
+00000000       F *UND*	00000000 _airkiss_getdevid
+00000000       F *UND*	00000000 _airkiss_getdevicekey
+00000210 g     F .irom0.text	0000004d .hidden airkiss_cloud_loop
+00000000       F *UND*	00000000 _airkiss_longlingk_loop
+00000000       F *UND*	00000000 _airkiss_autoauth_loop
+00000000       F *UND*	00000000 _airkiss_taskmanager_loop
+00000000       F *UND*	00000000 airkiss_gettime_ms
+00000000       F *UND*	00000000 __udivsi3
+00000000       F *UND*	00000000 airkiss_mem_monitor
+00000260 g     F .irom0.text	0000004d .hidden _airkiss_handle_response
+000002b0 g     F .irom0.text	00000037 .hidden _airkiss_handle_server_notify
+000002e8 g     F .irom0.text	0000002f .hidden _airkiss_handle_event_callback
+00000318 g     F .irom0.text	0000003f .hidden airkiss_cloud_sendmessage
+00000000       F *UND*	00000000 _airkiss_start_task
+00000358 g     F .irom0.text	00000039 .hidden airkiss_cloud_checkupdate
+00000394 g     F .irom0.text	00000011 .hidden airkiss_regist_callbacks
+000003a8 g     F .irom0.text	00000005 .hidden airkiss_cloud_version
+000003b0 g     F .irom0.text	0000000f .hidden airkiss_get_venderid
+000003c0 g     F .irom0.text	0000000f .hidden airkiss_get_deviceid
+
+
+
+airkiss_cvt.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_cvt.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l     F .irom0.text	000001f2 my_modf
+000001f4 l     F .irom0.text	00000216 cvt
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000       F *UND*	00000000 __eqdf2
+00000000       F *UND*	00000000 __subdf3
+00000000       F *UND*	00000000 __ltdf2
+00000000       F *UND*	00000000 __nedf2
+00000000       F *UND*	00000000 __divdf3
+00000000       F *UND*	00000000 __adddf3
+00000000       F *UND*	00000000 __muldf3
+00000000       F *UND*	00000000 __fixdfsi
+00000000       F *UND*	00000000 __gtdf2
+0000040c g     F .irom0.text	00000013 .hidden ecvtbuf
+00000420 g     F .irom0.text	00000013 .hidden fcvtbuf
+
+
+
+airkiss_longlink.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_longlink.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000017 cloudurl_54
+00000000 l     F .irom0.text	00000036 _handle_disconnect
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     O .bss	00000001 .hidden ak_longlink_state
+00000004 g     O .bss	00000004 .hidden longlink_socket
+00000008 g     O .bss	00000001 .hidden nooping_state
+0000000c g     O .bss	00000004 .hidden last_noop_time
+00000010 g     O .bss	00000004 .hidden start_noop_time
+00000014 g     O .bss	00000002 .hidden longlink_tx_head
+00000016 g     O .bss	00000002 .hidden longlink_rx_head
+00000020 g     O .bss	000005dc .hidden longlink_rx_buf
+00000600 g     O .bss	000005dc .hidden longlink_tx_buf
+00000000 g     O .data	00000004 .hidden cloud_ip
+00000010 g     O .data	00000010 .hidden cloud_ip_arry
+00000000       F *UND*	00000000 airkiss_printfImp
+00000000       F *UND*	00000000 airkiss_tcp_disconnect
+00000000       F *UND*	00000000 _airkiss_set_login
+00000038 g     F .irom0.text	0000000d .hidden _airkiss_longlink_state
+00000048 g     F .irom0.text	00000081 .hidden _airkiss_longlink_send
+00000000       F *UND*	00000000 airkiss_memcpy
+000000cc g     F .irom0.text	0000029e .hidden _airkiss_longlingk_loop
+00000000       F *UND*	00000000 airkiss_tcp_recv
+00000000       F *UND*	00000000 airkiss_gettime_ms
+00000000       F *UND*	00000000 _airkiss_task_response_handle
+00000000       F *UND*	00000000 airkiss_dns_gethost
+00000000       F *UND*	00000000 airkiss_sprintf
+00000000       F *UND*	00000000 airkiss_tcp_checkstate
+00000000       F *UND*	00000000 airkiss_dns_checkstate
+00000000       F *UND*	00000000 airkiss_tcp_connect
+00000000       F *UND*	00000000 airkiss_tcp_send
+00000000       F *UND*	00000000 airkiss_tcp_socket_create
+0000036c g     F .irom0.text	00000004 .hidden _airkiss_longlink_init
+
+
+
+airkiss_memmanager.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_memmanager.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l     O .bss	00000008 m_pool_29
+00000000 l     F .irom0.text	00000036 __airkiss_mem_compact
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000038 g     F .irom0.text	00000010 .hidden airkiss_mem_free
+00000048 g     F .irom0.text	0000005f .hidden airkiss_mem_malloc
+000000a8 g     F .irom0.text	00000025 .hidden airkiss_mem_calloc
+00000000       F *UND*	00000000 airkiss_memset
+000000d0 g     F .irom0.text	0000001f .hidden airkiss_mem_init
+000000f0 g     F .irom0.text	0000001c .hidden airkiss_mem_compact
+0000010c g     F .irom0.text	00000055 .hidden airkiss_mem_monitor
+00000000       F *UND*	00000000 airkiss_printfImp
+
+
+
+airkiss_packer.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_packer.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000004 KMagicNum_38
+00000004 l     O .rodata	00000004 KHeadVersion_39
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000010 g     O .rodata	00000263 .hidden rsa1024
+00000000 g     F .irom0.text	000001f4 .hidden _airkiss_packer
+00000000       F *UND*	00000000 airkiss_memset
+00000000       F *UND*	00000000 _airkiss_get_devtype
+00000000       F *UND*	00000000 _airkiss_client_version
+00000000       F *UND*	00000000 _airkiss_getvenderid
+00000000       F *UND*	00000000 strlen
+00000000       F *UND*	00000000 airkiss_printfImp
+00000000       F *UND*	00000000 airkiss_memcpy
+00000000       F *UND*	00000000 _airkiss_getdevid
+00000000       F *UND*	00000000 _airkiss_get_sessionkey
+00000000       F *UND*	00000000 rsa_pub_encrypt
+00000000       F *UND*	00000000 airkiss_mem_free
+00000000       F *UND*	00000000 _ak_htonl
+00000000       F *UND*	00000000 _ak_htonll
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 hmac_encode_md5
+00000000       F *UND*	00000000 aes_encrypt_cbc
+000001f4 g     F .irom0.text	00000507 .hidden _airkiss_unpacker
+00000000       F *UND*	00000000 _ak_ntohl
+00000000       F *UND*	00000000 _ak_ntohll
+00000000       F *UND*	00000000 airkiss_memcmp
+00000000       F *UND*	00000000 _airkiss_get_randomkey
+00000000       F *UND*	00000000 aes_decrypt_cbc
+
+
+
+airkiss_sprintf.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_sprintf.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000025 lower_digits_29
+00000030 l     O .rodata	00000025 upper_digits_30
+00000000 l     F .irom0.text	00000016 strnlen
+00000018 l     F .irom0.text	00000025 ee_skip_atoi
+00000040 l     F .irom0.text	000001bd ee_number
+00000200 l     F .irom0.text	0000040b flt
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000       F *UND*	00000000 __umodsi3
+00000000       F *UND*	00000000 __udivsi3
+00000000       F *UND*	00000000 __ltdf2
+00000000       F *UND*	00000000 ecvtbuf
+00000000       F *UND*	00000000 fcvtbuf
+00000000       F *UND*	00000000 __eqdf2
+00000000       F *UND*	00000000 __modsi3
+00000000       F *UND*	00000000 __divsi3
+0000060c g     F .irom0.text	00000680 .hidden airkiss_sprintf
+
+
+
+airkiss_taskmanager.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_taskmanager.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l     F .irom0.text	0000001b _find_empty_location
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     O .bss	00000004 .hidden m_hashcode
+00000008 g     O .bss	00000008 .hidden m_sequence
+00000010 g     O .bss	00000002 .hidden cmd_quenue_mask
+00000020 g     O .bss	00000100 .hidden cmd_list
+0000001c g     F .irom0.text	000000b0 .hidden _airkiss_start_task
+00000000       F *UND*	00000000 airkiss_printfImp
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 airkiss_memcpy
+000000cc g     F .irom0.text	00000226 .hidden _airkiss_task_response_handle
+00000000       F *UND*	00000000 memcpy
+00000000       F *UND*	00000000 _airkiss_unpacker
+00000000       F *UND*	00000000 _airkiss_set_login
+00000000       F *UND*	00000000 airkiss_mem_free
+00000000       F *UND*	00000000 _airkiss_handle_server_notify
+00000000       F *UND*	00000000 _airkiss_autoauth_handleresp
+00000000       F *UND*	00000000 _airkiss_handle_response
+00000000       F *UND*	00000000 airkiss_gettime_ms
+000002f4 g     F .irom0.text	00000243 .hidden _airkiss_taskmanager_loop
+00000000       F *UND*	00000000 _airkiss_is_login
+00000000       F *UND*	00000000 _airkiss_packer
+00000000       F *UND*	00000000 _airkiss_longlink_send
+
+
+
+airkiss_utils.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_utils.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000004 _AK_LIT_ENDIAN_27
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     O .data	00000004 .hidden _ak_next
+00000000 g     F .irom0.text	0000001c .hidden _ak_htons
+0000001c g     F .irom0.text	0000002b .hidden _ak_htonl
+00000048 g     F .irom0.text	00000062 .hidden _ak_htonll
+000000ac g     F .irom0.text	0000001c .hidden _ak_ntohs
+000000c8 g     F .irom0.text	0000002b .hidden _ak_ntohl
+000000f4 g     F .irom0.text	00000062 .hidden _ak_ntohll
+00000158 g     F .irom0.text	0000001a .hidden _ak_strlen
+00000174 g     F .irom0.text	0000003f .hidden airkiss_memcpy
+000001b4 g     F .irom0.text	00000011 .hidden airkiss_memset
+000001c8 g     F .irom0.text	00000025 .hidden airkiss_memcmp
+000001f0 g     F .irom0.text	00000010 .hidden airkiss_tolower
+00000200 g     F .irom0.text	00000059 .hidden airkiss_generatekey
+00000000       F *UND*	00000000 __umodsi3
+
+
+
+cJSON.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 cJSON.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l     O .bss	00000004 ep_32
+00000004 l     O .bss	00000004 cJSON_malloc_36
+00000008 l     O .bss	00000004 cJSON_free_38
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000007 firstByteMark_65
+00000008 l     F .irom0.text	00000063 cJSON_strcasecmp
+0000006c l     F .irom0.text	00000037 cJSON_strdup
+000000bc l     F .irom0.text	00000027 cJSON_New_Item
+00000148 l     F .irom0.text	00000092 ensure
+000001dc l     F .irom0.text	00000024 update
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000200 l     F .irom0.text	000001ad print_number
+000003b0 l     F .irom0.text	000000d9 parse_hex4
+0000048c l     F .irom0.text	000001c5 parse_string
+00000654 l     F .irom0.text	000001b2 print_string_ptr
+00000808 l     F .irom0.text	00000011 print_string
+0000081c l     F .irom0.text	00000013 skip
+00000914 l     F .irom0.text	000003ba parse_value
+00000cd0 l     F .irom0.text	00000129 print_value
+00000dfc l     F .irom0.text	0000024b print_array
+00001048 l     F .irom0.text	00000474 print_object
+0000150c l     F .irom0.text	00000039 create_reference
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000007 .hidden cJSON_GetErrorPtr
+00000000       F *UND*	00000000 airkiss_tolower
+00000000       F *UND*	00000000 strlen
+00000000       F *UND*	00000000 memcpy
+000000a4 g     F .irom0.text	00000016 .hidden cJSON_InitHooks
+00000000       F *UND*	00000000 memset
+000000e4 g     F .irom0.text	00000061 .hidden cJSON_Delete
+00000000       F *UND*	00000000 __eqdf2
+00000000       F *UND*	00000000 __floatsidf
+00000000       F *UND*	00000000 __subdf3
+00000000       F *UND*	00000000 __ledf2
+00000000       F *UND*	00000000 __gedf2
+00000000       F *UND*	00000000 __fixdfsi
+00000000       F *UND*	00000000 __ltdf2
+00000000       F *UND*	00000000 airkiss_sprintf
+00000000       F *UND*	00000000 __gtdf2
+00000000       F *UND*	00000000 strcpy
+00000000       F *UND*	00000000 strchr
+00000830 g     F .irom0.text	0000006a .hidden cJSON_ParseWithOpts
+0000089c g     F .irom0.text	00000013 .hidden cJSON_Parse
+000008b0 g     F .irom0.text	00000015 .hidden cJSON_Print
+000008c8 g     F .irom0.text	00000015 .hidden cJSON_PrintUnformatted
+000008e0 g     F .irom0.text	00000031 .hidden cJSON_PrintBuffered
+00000000       F *UND*	00000000 strncmp
+00000000       F *UND*	00000000 __adddf3
+00000000       F *UND*	00000000 __mulsf3
+00000000       F *UND*	00000000 __extendsfdf2
+00000000       F *UND*	00000000 __muldf3
+00000000       F *UND*	00000000 __divsf3
+000014bc g     F .irom0.text	00000014 .hidden cJSON_GetArraySize
+000014d0 g     F .irom0.text	00000010 .hidden cJSON_GetArrayItem
+000014e0 g     F .irom0.text	0000002a .hidden cJSON_GetObjectItem
+00001548 g     F .irom0.text	00000019 .hidden cJSON_AddItemToArray
+00001564 g     F .irom0.text	00000036 .hidden cJSON_AddItemToObject
+0000159c g     F .irom0.text	00000045 .hidden cJSON_AddItemToObjectCS
+000015e4 g     F .irom0.text	0000001a .hidden cJSON_AddItemReferenceToArray
+00001600 g     F .irom0.text	0000001e .hidden cJSON_AddItemReferenceToObject
+00001620 g     F .irom0.text	00000037 .hidden cJSON_DetachItemFromArray
+00001658 g     F .irom0.text	00000012 .hidden cJSON_DeleteItemFromArray
+0000166c g     F .irom0.text	00000047 .hidden cJSON_DetachItemFromObject
+000016b4 g     F .irom0.text	00000012 .hidden cJSON_DeleteItemFromObject
+000016c8 g     F .irom0.text	0000003a .hidden cJSON_InsertItemInArray
+00001704 g     F .irom0.text	00000042 .hidden cJSON_ReplaceItemInArray
+00001748 g     F .irom0.text	0000004c .hidden cJSON_ReplaceItemInObject
+00001794 g     F .irom0.text	00000015 .hidden cJSON_CreateNull
+000017ac g     F .irom0.text	00000015 .hidden cJSON_CreateTrue
+000017c4 g     F .irom0.text	00000015 .hidden cJSON_CreateFalse
+000017dc g     F .irom0.text	0000001c .hidden cJSON_CreateBool
+000017f8 g     F .irom0.text	0000002e .hidden cJSON_CreateNumber
+00001828 g     F .irom0.text	00000026 .hidden cJSON_CreateString
+00001850 g     F .irom0.text	00000015 .hidden cJSON_CreateArray
+00001868 g     F .irom0.text	00000015 .hidden cJSON_CreateObject
+00001880 g     F .irom0.text	0000004e .hidden cJSON_CreateIntArray
+000018d0 g     F .irom0.text	0000004e .hidden cJSON_CreateFloatArray
+00001920 g     F .irom0.text	0000004d .hidden cJSON_CreateDoubleArray
+00001970 g     F .irom0.text	0000004b .hidden cJSON_CreateStringArray
+000019bc g     F .irom0.text	00000095 .hidden cJSON_Duplicate
+00001a54 g     F .irom0.text	0000009b .hidden cJSON_Minify
+
+
+
+aes_algo.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 aes_algo.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	000000f7 .hidden aes_encrypt_cbc
+00000000       F *UND*	00000000 memcpy
+00000000       F *UND*	00000000 psAesInit
+00000000       F *UND*	00000000 memset
+00000000       F *UND*	00000000 psAesEncrypt
+00000000       F *UND*	00000000 airkiss_mem_free
+00000000       F *UND*	00000000 airkiss_mem_malloc
+000000f8 g     F .irom0.text	000000ea .hidden aes_decrypt_cbc
+00000000       F *UND*	00000000 psAesDecrypt
+
+
+
+cryptolib.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 cryptolib.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000012 .hidden cryptolib_init
+00000000       F *UND*	00000000 psCryptoOpen
+00000014 g     F .irom0.text	0000000f .hidden cryptolib_close
+00000000       F *UND*	00000000 psCryptoClose
+
+
+
+hmac_algo.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 hmac_algo.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000020 .hidden hmac_encode_md5
+00000000       F *UND*	00000000 psHmacMd5
+
+
+
+rsa_algo.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 rsa_algo.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	0000006e .hidden rsa_pub_encrypt
+00000000       F *UND*	00000000 airkiss_mem_calloc
+00000000       F *UND*	00000000 pkcs1ParsePrivBin
+00000000       F *UND*	00000000 psFreePubKey
+00000000       F *UND*	00000000 psRsaEncryptPub
+
+
+
+aes.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 aes.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000400 Te4_27
+00000400 l     O .rodata	00000400 TD0_29
+00000800 l     O .rodata	00000028 rcon_37
+00000830 l     O .rodata	00000400 TE0_40
+00000c30 l     O .rodata	00000410 Td4_42
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	0000005d .hidden psAesInit
+00000000       F *UND*	00000000 memset
+00000204 g     F .irom0.text	00000532 .hidden psAesInitKey
+00000060 g     F .irom0.text	000000ba .hidden psAesEncrypt
+00000738 g     F .irom0.text	00000340 .hidden psAesEncryptBlock
+00000000       F *UND*	00000000 memset_s
+0000011c g     F .irom0.text	000000e7 .hidden psAesDecrypt
+00000a78 g     F .irom0.text	00000347 .hidden psAesDecryptBlock
+00000000       F *UND*	00000000 psBurnStack
+
+
+
+aesGCM.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 aesGCM.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+aesni.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 aesni.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+airkiss_osdep.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 airkiss_osdep.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000002 .hidden _psTrace
+00000004 g     F .irom0.text	00000002 .hidden _psTraceStr
+00000008 g     F .irom0.text	00000002 .hidden _psTraceInt
+0000000c g     F .irom0.text	00000002 .hidden _psTracePtr
+00000010 g     F .irom0.text	00000014 .hidden ak_qcom_mem_realloc
+00000000       F *UND*	00000000 airkiss_printfImp
+00000024 g     F .irom0.text	00000014 .hidden osdepEntropyOpen
+00000038 g     F .irom0.text	00000012 .hidden osdepEntropyClose
+0000004c g     F .irom0.text	00000014 .hidden psGetEntropy
+00000060 g     F .irom0.text	00000004 .hidden osdepTimeOpen
+00000064 g     F .irom0.text	00000002 .hidden osdepTimeClose
+
+
+
+arc4.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 arc4.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+asn1.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 asn1.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	0000005d .hidden getAsnLength
+00000060 g     F .irom0.text	00000070 .hidden getAsnBig
+00000000       F *UND*	00000000 pstm_init_for_read_unsigned_bin
+00000000       F *UND*	00000000 pstm_read_unsigned_bin
+00000000       F *UND*	00000000 pstm_clear
+000000d0 g     F .irom0.text	00000059 .hidden getAsnSequence
+0000012c g     F .irom0.text	00000037 .hidden getAsnSequenceNoLenCheck
+00000164 g     F .irom0.text	00000059 .hidden getAsnSet
+000001c0 g     F .irom0.text	000000a2 .hidden getAsnInteger
+00000264 g     F .irom0.text	0000005f .hidden getStreamingAsnAlgorithmIdentifier
+00000314 g     F .irom0.text	000000a0 .hidden getAsnOID
+000002c4 g     F .irom0.text	0000004f .hidden getAsnAlgorithmIdentifier
+000003b4 g     F .irom0.text	00000134 .hidden getAsnConstructedOctetString
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psError
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 memcpy
+00000000       F *UND*	00000000 airkiss_mem_free
+000004e8 g     F .irom0.text	000000b7 .hidden getAsnRsaPubKey
+00000000       F *UND*	00000000 memset
+00000000       F *UND*	00000000 pstm_unsigned_bin_size
+
+
+
+base64.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 base64.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+corelib.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 corelib.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l     O .data	00000020 g_config_27
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+000000ec l     F .irom0.text	00000026 mem2str
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000059 .hidden psCoreOpen
+00000000       F *UND*	00000000 strncpy
+00000000       F *UND*	00000000 strncmp
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+000000d4 g     F .irom0.text	00000015 .hidden _psErrorStr
+0000005c g     F .irom0.text	00000022 .hidden psCoreClose
+00000000       F *UND*	00000000 osdepEntropyClose
+00000000       F *UND*	00000000 osdepTimeClose
+00000080 g     F .irom0.text	00000024 .hidden memcmpct
+000000a4 g     F .irom0.text	00000015 .hidden _psError
+00000000       F *UND*	00000000 _psTrace
+000000bc g     F .irom0.text	00000015 .hidden _psErrorInt
+00000114 g     F .irom0.text	000000cf .hidden psTraceBytes
+00000000       F *UND*	00000000 memset
+000001e4 g     F .irom0.text	000000d6 .hidden psParseList
+00000000       F *UND*	00000000 strlen
+00000000       F *UND*	00000000 airkiss_mem_malloc
+000002bc g     F .irom0.text	0000002b .hidden psFreeList
+00000000       F *UND*	00000000 memcpy
+00000000       F *UND*	00000000 airkiss_mem_free
+000002e8 g     F .irom0.text	00000028 .hidden psBurnStack
+00000000       F *UND*	00000000 memset_s
+
+
+
+des3.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 des3.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+dh.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 dh.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+ecc.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 ecc.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+hmac.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 hmac.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	0000008e .hidden psHmacMd5
+00000000       F *UND*	00000000 psMd5Init
+00000000       F *UND*	00000000 psMd5Update
+00000000       F *UND*	00000000 psMd5Final
+00000000       F *UND*	00000000 memcpy
+00000090 g     F .irom0.text	000000a4 .hidden psHmacMd5Init
+00000134 g     F .irom0.text	00000040 .hidden psHmacMd5Update
+00000174 g     F .irom0.text	00000070 .hidden psHmacMd5Final
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psError
+00000000       F *UND*	00000000 memset
+000001e4 g     F .irom0.text	0000008e .hidden psHmacSha1
+00000000       F *UND*	00000000 psSha1Init
+00000000       F *UND*	00000000 psSha1Update
+00000000       F *UND*	00000000 psSha1Final
+00000274 g     F .irom0.text	000000a4 .hidden psHmacSha1Init
+00000318 g     F .irom0.text	00000040 .hidden psHmacSha1Update
+00000358 g     F .irom0.text	00000070 .hidden psHmacSha1Final
+
+
+
+idea.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 idea.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+md2.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 md2.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+md4.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 md4.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+md5.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 md5.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000040 Worder_34
+00000040 l     O .rodata	00000110 Korder_35
+00000150 l     O .rodata	00000040 Rorder_36
+00000000 l     F .irom0.text	000001ad md5_compress
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psError
+00000000       F *UND*	00000000 psBurnStack
+000001b0 g     F .irom0.text	00000048 .hidden psMd5Init
+000001f8 g     F .irom0.text	000000a3 .hidden psMd5Update
+00000000       F *UND*	00000000 memcpy
+0000029c g     F .irom0.text	00000100 .hidden psMd5Final
+00000000       F *UND*	00000000 memset
+
+
+
+memset_s.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 memset_s.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000028 .hidden memset_s
+00000000       F *UND*	00000000 memset
+
+
+
+osdep.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 osdep.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+pkcs.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 pkcs.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000089 .hidden pkcs1Pad
+00000000       F *UND*	00000000 memcpy
+00000000       F *UND*	00000000 matrixCryptoGetPrngData
+0000008c g     F .irom0.text	00000054 .hidden pkcs1Unpad
+000000e0 g     F .irom0.text	00000157 .hidden pkcs1ParsePrivBin
+00000000       F *UND*	00000000 psNewPubKey
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psError
+00000000       F *UND*	00000000 getAsnSequence
+00000000       F *UND*	00000000 psFreePubKey
+00000000       F *UND*	00000000 pstm_unsigned_bin_size
+00000000       F *UND*	00000000 getAsnInteger
+00000000       F *UND*	00000000 getAsnBig
+
+
+
+prng.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 prng.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l     O .bss	00000004 gMatrixPrng_28
+00000004 l     O .bss	00000002 gPrngInit_29
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	0000001c .hidden psOpenPrng
+00000044 g     F .irom0.text	00000008 .hidden psInitPrng
+0000001c g     F .irom0.text	00000002 .hidden psClosePrng
+00000020 g     F .irom0.text	00000024 .hidden matrixCryptoGetPrngData
+0000004c g     F .irom0.text	00000048 .hidden psGetPrng
+00000000       F *UND*	00000000 psGetEntropy
+
+
+
+pstm.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 pstm.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000974 l     F .irom0.text	000000c5 pstm_mul_2d
+00000704 l     F .irom0.text	000000ff s_pstm_add
+00000000 l    d  .rodata	00000000 .rodata
+000018b4 l     F .irom0.text	00000336 pstm_invmod_slow
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000063 .hidden pstm_init_size
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psError
+00000064 g     F .irom0.text	00000059 .hidden pstm_init
+000000c0 g     F .irom0.text	0000006e .hidden pstm_grow
+00000000       F *UND*	00000000 ak_qcom_mem_realloc
+00000130 g     F .irom0.text	00000072 .hidden pstm_copy
+000001a4 g     F .irom0.text	0000002a .hidden pstm_clamp
+000001d0 g     F .irom0.text	00000045 .hidden pstm_clear
+00000000       F *UND*	00000000 airkiss_mem_free
+00000218 g     F .irom0.text	0000003e .hidden pstm_clear_multi
+00000258 g     F .irom0.text	00000021 .hidden pstm_zero
+0000027c g     F .irom0.text	0000004a .hidden pstm_cmp_mag
+000002c8 g     F .irom0.text	00000035 .hidden pstm_cmp
+00000300 g     F .irom0.text	0000001a .hidden pstm_init_for_read_unsigned_bin
+0000031c g     F .irom0.text	0000007a .hidden pstm_read_unsigned_bin
+00000398 g     F .irom0.text	00000032 .hidden pstm_count_bits
+000003cc g     F .irom0.text	00000021 .hidden pstm_unsigned_bin_size
+000003f0 g     F .irom0.text	00000029 .hidden pstm_set
+0000041c g     F .irom0.text	0000006a .hidden pstm_rshd
+00000488 g     F .irom0.text	0000008f .hidden pstm_lshd
+00000518 g     F .irom0.text	00000079 .hidden pstm_2expt
+00000000       F *UND*	00000000 __modsi3
+00000594 g     F .irom0.text	000000b0 .hidden pstm_mul_2
+00000644 g     F .irom0.text	000000be .hidden s_pstm_sub
+00000804 g     F .irom0.text	00000063 .hidden pstm_sub
+00000868 g     F .irom0.text	00000039 .hidden pstm_sub_d
+000008a4 g     F .irom0.text	0000003d .hidden pstm_montgomery_setup
+000008e4 g     F .irom0.text	0000008d .hidden pstm_montgomery_calc_normalization
+00000a3c g     F .irom0.text	000000bb .hidden pstm_mul_d
+00000af8 g     F .irom0.text	0000014f .hidden pstm_div_2d
+00000c48 g     F .irom0.text	000000a4 .hidden pstm_div_2
+00000cec g     F .irom0.text	00000046 .hidden pstm_init_copy
+00000d34 g     F .irom0.text	00000444 .hidden pstm_div
+00001710 g     F .irom0.text	00000062 .hidden pstm_add
+00000000       F *UND*	00000000 __udivsi3
+00001178 g     F .irom0.text	00000033 .hidden pstm_exch
+00000000       F *UND*	00000000 memcpy
+000011ac g     F .irom0.text	00000069 .hidden pstm_mod
+00001218 g     F .irom0.text	00000083 .hidden pstm_mulmod
+00000000       F *UND*	00000000 pstm_mul_comba
+0000129c g     F .irom0.text	00000474 .hidden pstm_exptmod
+00000000       F *UND*	00000000 pstm_sqr_comba
+00000000       F *UND*	00000000 pstm_montgomery_reduce
+00001774 g     F .irom0.text	00000078 .hidden pstm_to_unsigned_bin_nr
+000017ec g     F .irom0.text	0000009c .hidden pstm_to_unsigned_bin
+00001888 g     F .irom0.text	0000002a .hidden pstm_cmp_d
+00001bec g     F .irom0.text	0000025d .hidden pstm_invmod
+
+
+
+pstm_montgomery_reduce.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 pstm_montgomery_reduce.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	0000014f .hidden pstm_montgomery_reduce
+00000000       F *UND*	00000000 memset
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 pstm_clamp
+00000000       F *UND*	00000000 pstm_cmp_mag
+00000000       F *UND*	00000000 s_pstm_sub
+00000000       F *UND*	00000000 airkiss_mem_free
+
+
+
+pstm_mul_comba.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 pstm_mul_comba.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000158 .hidden pstm_mul_comba
+00000000       F *UND*	00000000 pstm_grow
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 memset
+00000000       F *UND*	00000000 pstm_clamp
+00000000       F *UND*	00000000 airkiss_mem_free
+
+
+
+pstm_sqr_comba.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 pstm_sqr_comba.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000197 .hidden pstm_sqr_comba
+00000000       F *UND*	00000000 pstm_grow
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 memset
+00000000       F *UND*	00000000 pstm_clamp
+00000000       F *UND*	00000000 airkiss_mem_free
+
+
+
+pubkey.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 pubkey.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l     O .data	00000020 g_config_27
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	0000007a .hidden psCryptoOpen
+00000000       F *UND*	00000000 strncpy
+00000000       F *UND*	00000000 strncmp
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psErrorStr
+00000000       F *UND*	00000000 psOpenPrng
+00000000       F *UND*	00000000 psCoreOpen
+00000000       F *UND*	00000000 _psError
+0000007c g     F .irom0.text	00000012 .hidden psCryptoClose
+00000000       F *UND*	00000000 psClosePrng
+00000000       F *UND*	00000000 psCoreClose
+00000090 g     F .irom0.text	00000077 .hidden psNewPubKey
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 memset
+00000000       F *UND*	00000000 airkiss_mem_free
+00000108 g     F .irom0.text	00000029 .hidden psFreePubKey
+00000000       F *UND*	00000000 psRsaFreeKey
+
+
+
+rc2.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 rc2.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+rsa.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 rsa.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata	00000000 .rodata
+00000000 l     O .rodata	00000013 asn256dsWrap_64
+00000020 l     O .rodata	0000000f asn1dsWrap_65
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	00000046 .hidden psRsaFreeKey
+00000000       F *UND*	00000000 pstm_clear
+00000000       F *UND*	00000000 airkiss_mem_free
+00000048 g     F .irom0.text	000001e4 .hidden psRsaCrypt
+00000000       F *UND*	00000000 pstm_init_for_read_unsigned_bin
+00000000       F *UND*	00000000 pstm_exptmod
+00000000       F *UND*	00000000 pstm_unsigned_bin_size
+00000000       F *UND*	00000000 memset
+00000000       F *UND*	00000000 pstm_to_unsigned_bin
+00000000       F *UND*	00000000 pstm_clear_multi
+00000000       F *UND*	00000000 pstm_read_unsigned_bin
+00000000       F *UND*	00000000 pstm_cmp
+00000000       F *UND*	00000000 pstm_init_size
+00000000       F *UND*	00000000 pstm_sub
+00000000       F *UND*	00000000 pstm_mulmod
+00000000       F *UND*	00000000 pstm_mul_comba
+00000000       F *UND*	00000000 pstm_add
+0000022c g     F .irom0.text	00000070 .hidden psRsaEncryptPriv
+00000000       F *UND*	00000000 pkcs1Pad
+0000029c g     F .irom0.text	00000070 .hidden psRsaEncryptPub
+0000030c g     F .irom0.text	00000066 .hidden psRsaDecryptPriv
+00000000       F *UND*	00000000 pkcs1Unpad
+00000374 g     F .irom0.text	0000005e .hidden psRsaDecryptPub
+000003d4 g     F .irom0.text	0000017d .hidden pubRsaDecryptSignedElement
+00000000       F *UND*	00000000 airkiss_mem_malloc
+00000000       F *UND*	00000000 getAsnSequence
+00000000       F *UND*	00000000 memcpy
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psError
+00000000       F *UND*	00000000 getAsnAlgorithmIdentifier
+00000000       F *UND*	00000000 getAsnLength
+00000554 g     F .irom0.text	00000087 .hidden privRsaEncryptSignedElement
+
+
+
+seed.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 seed.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+sha1.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 sha1.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .irom0.text	00000000 .irom0.text
+00000000 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+00000000 l    d  .irom0.literal	00000000 .irom0.literal
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+00000000 l    d  .xt.lit	00000000 .xt.lit
+00000000 l    d  .xt.prop	00000000 .xt.prop
+00000000 g     F .irom0.text	000001d0 .hidden sha1_compress
+00000000       F *UND*	00000000 _psTraceStr
+00000000       F *UND*	00000000 _psTraceInt
+00000000       F *UND*	00000000 _psError
+00000000       F *UND*	00000000 psBurnStack
+000001d0 g     F .irom0.text	0000004d .hidden psSha1Init
+00000220 g     F .irom0.text	000000a3 .hidden psSha1Update
+00000000       F *UND*	00000000 memcpy
+000002c4 g     F .irom0.text	00000107 .hidden psSha1Final
+00000000       F *UND*	00000000 memset
+
+
+
+sha224.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 sha224.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+sha256.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 sha256.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+sha384.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 sha384.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+sha512.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 sha512.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+x509.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 x509.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+
+
+yarrow.o:     file format elf32-xtensa-le
+
+SYMBOL TABLE:
+00000000 l    df *ABS*	00000000 yarrow.c
+00000000 l    d  .text	00000000 .text
+00000000 l    d  .data	00000000 .data
+00000000 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .xtensa.info	00000000 .xtensa.info
+
+

@@ -8,8 +8,8 @@
 #endif
 
 //TODO
-#define  DEVICE_TYPE   "FIXME"
-#define  DEVICE_ID     "FIXME"
+#define  DEVICE_TYPE   "wx6a6ad23cd72a18fd"
+#define  DEVICE_ID     "gh_2f44589062d9_9561fcd971d28a54"
 
 #define  AIRKISS_LAN_PORT    (12476)
 

@@ -43,6 +43,6 @@ void user_init(void)
 
 	wifi_set_opmode(STATION_MODE);
 
-	system_init_done_cb(init_done_cb);
+	system_init_done_cb(init_done_cb);	//register a system-init-done callback
 }
 

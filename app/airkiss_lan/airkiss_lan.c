@@ -175,7 +175,7 @@ bool ICACHE_FLASH_ATTR airkiss_lan_udp_delete(void)
     os_timer_disarm(&lan_udp_timer);
     if (pairkiss_espconn != NULL)
     {
-        espconn_delete(pairkiss_espconn);
+        espconn_delete(pairkiss_espconn);		//Delete a transmission
         if (pairkiss_espconn->proto.udp != NULL)
             os_free(pairkiss_espconn->proto.udp);
 

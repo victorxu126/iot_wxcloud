@@ -120,7 +120,7 @@ airkiss_app_button_check(void)
             else
             {
                 AIRKISS_APP_DEBUG("button long press!!!\r\n");
-                network_state_change(network_state_smart);
+                network_state_change(network_state_smart);	//start airkiss
                 KEY_State ++;
             }
 
@@ -288,7 +288,7 @@ void airkiss_app_apply_settings(void)
 
 void airkiss_app_load(void)
 {
-    system_param_load(
+    system_param_load(				//Read protected data from flash
         (AIRKISS_APP_START_SEC),
         0,
         (void *)(&local_system_status),
@@ -310,7 +310,7 @@ void airkiss_app_load(void)
 void airkiss_app_save(void)
 {
     local_system_status.mcu_status = local_mcu_status;
-    system_param_save_with_protect(
+    system_param_save_with_protect(		//Write data into flash with protection
         (AIRKISS_APP_START_SEC),
         (void *)(&local_system_status),
         sizeof(local_system_status));
@@ -358,7 +358,7 @@ airkiss_app_start_check(uint32_t system_start_seconds)
             local_system_status.start_continue = 0;
             // Save param
             airkiss_app_save();
-            // Restore system
+            // Restore system, reset to default settings
             system_restore();
             // Restart system
             system_restart();

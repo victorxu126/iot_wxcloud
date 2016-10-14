@@ -25,7 +25,7 @@
 #define PRESS 			0
 #define UNPRESS 		1
 
-#define KEY_IO_NUM     	4
+#define KEY_IO_NUM     	4		//airkiss control button use GPIO4
 #define KEY_IO_MUX     	pin_name[KEY_IO_NUM]
 #define KEY_IO_FUNC    	pin_func[KEY_IO_NUM]
 
@@ -301,7 +301,7 @@ void airkiss_app_load(void)
     {
         local_system_status.init_flag = 1;
     }
-    local_system_status.start_count += 1;
+    local_system_status.start_count += 1;	//Æô¶¯´ÎÊý
     local_system_status.start_continue += 1;
     AIRKISS_APP_DEBUG("start count:%d,start_continue:%d\r\n", local_system_status.start_count, local_system_status.start_continue);
     airkiss_app_save();
@@ -314,6 +314,7 @@ void airkiss_app_save(void)
         (AIRKISS_APP_START_SEC),
         (void *)(&local_system_status),
         sizeof(local_system_status));
+    AIRKISS_APP_DEBUG("mcu_stauts data: .status= %d, .power_switch= %d, .alpha=%d\r\n",local_mcu_status.status,local_mcu_status.power_switch,local_mcu_status.alpha);
     AIRKISS_APP_DEBUG("param saved !\r\n");
 }
 
@@ -345,6 +346,7 @@ airkiss_app_start_check(uint32_t system_start_seconds)
     {
         local_system_status.start_continue = 0;
         airkiss_app_save();
+        AIRKISS_APP_DEBUG("airkiss_app_start_check ---1 \r\n");
     }
 
     if (local_system_status.start_continue >= 10)
@@ -362,11 +364,13 @@ airkiss_app_start_check(uint32_t system_start_seconds)
             system_restore();
             // Restart system
             system_restart();
+            AIRKISS_APP_DEBUG("airkiss_app_start_check ---2 \r\n");
         }
     }
     else if (local_system_status.start_continue >= 3)
     {
         network_state_change(network_state_smart);
+        AIRKISS_APP_DEBUG("airkiss_app_start_check ---3 \r\n");
     }
 
     if (network_state_smart == network_current_state())
@@ -378,6 +382,7 @@ airkiss_app_start_check(uint32_t system_start_seconds)
             os_timer_disarm(&airkiss_app_smart_timer);
             os_timer_setfn(&airkiss_app_smart_timer, (os_timer_func_t *)airkiss_app_smart_timer_tick, NULL);
             os_timer_arm(&airkiss_app_smart_timer, 100, 1);
+            AIRKISS_APP_DEBUG("airkiss_app_start_check ---4 \r\n");
         }
     }
     else
@@ -387,6 +392,7 @@ airkiss_app_start_check(uint32_t system_start_seconds)
             airkiss_app_state = airkiss_app_state_normal;
             airkiss_app_apply_settings();
             os_timer_disarm(&airkiss_app_smart_timer);
+            AIRKISS_APP_DEBUG("airkiss_app_start_check ---5 \r\n");
         }
     }
 

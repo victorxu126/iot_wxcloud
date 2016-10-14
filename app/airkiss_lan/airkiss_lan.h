@@ -8,8 +8,9 @@
 #endif
 
 //TODO
-#define  DEVICE_TYPE   "wx6a6ad23cd72a18fd"
-#define  DEVICE_ID     "gh_2f44589062d9_9561fcd971d28a54"
+#define  DEVICE_TYPE   "wx6a6ad23cd72a18fd"	//appID
+//#define  DEVICE_ID     "gh_2f44589062d9_9561fcd971d28a54"	//product_id: 23429
+#define  DEVICE_ID     "gh_2f44589062d9_661d89e545f2abc6"	//product_id: 23990
 
 #define  AIRKISS_LAN_PORT    (12476)
 

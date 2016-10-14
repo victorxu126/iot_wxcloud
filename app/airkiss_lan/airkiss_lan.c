@@ -65,6 +65,7 @@ static void ICACHE_FLASH_ATTR airkiss_lan_udp_broadcast_tick(void)
         os_memcpy(pairkiss_espconn->proto.udp->remote_ip, &remote_ip, 4);
 
         lan_buf_len = sizeof(lan_buf);
+//        AIRKISS_LAN_DEBUG("Call airkiss_lan_pack() funciton.\r\n");
         ret = airkiss_lan_pack(AIRKISS_LAN_SSDP_NOTIFY_CMD,
             DEVICE_TYPE, DEVICE_ID, 0, 0, lan_buf, &lan_buf_len, &akconf);
         if (ret != AIRKISS_LAN_PAKE_READY)
@@ -72,19 +73,22 @@ static void ICACHE_FLASH_ATTR airkiss_lan_udp_broadcast_tick(void)
             AIRKISS_LAN_DEBUG("Pack lan packet error!");
             return ;
         }
+//        AIRKISS_LAN_DEBUG("Start send AIRKISS_LAN_SSDP_NOTIFY_CMD...\r\n");
         ret = espconn_sendto(pairkiss_espconn, lan_buf, lan_buf_len);
         if (ret != 0)
         {
             AIRKISS_LAN_DEBUG("UDP send error!");
         }
-        AIRKISS_LAN_DEBUG("Finish send notify!\n" );
+        AIRKISS_LAN_DEBUG("Finish send notify!" );
     }
 
-    	lan_udp_timer_counter--;
-    	if (lan_udp_timer_counter == 0)
-    	{
-    		os_timer_disarm(&lan_udp_timer);
-    	}
+	lan_udp_timer_counter--;
+	if (lan_udp_timer_counter == 0)
+	{
+		os_timer_disarm(&lan_udp_timer);
+		AIRKISS_LAN_DEBUG("destroy <lan_udp_timer>!");
+	}
+	AIRKISS_LAN_DEBUG("In airkiss_lan_udp_broadcast_tick(), lan_udp_timer_counter=%d",lan_udp_timer_counter);
 }
 
 /*
@@ -124,7 +128,12 @@ static void ICACHE_FLASH_ATTR airkiss_lan_udp_receive(void *arg, char *pdata, un
             AIRKISS_LAN_DEBUG("AIRKISS_LAN_SSDP_RESP_CMD\n");
             break;
         default:
-            AIRKISS_LAN_DEBUG("Pack is not ssdq req!\n");
+            AIRKISS_LAN_DEBUG("!!!Pack is not ssdq req!,return value=%d\n",ret);
+            espconn_get_connection_info(pairkiss_espconn, &pcon_info, 0);
+			AIRKISS_LAN_DEBUG("remote ip: %d.%d.%d.%d \r\n",pcon_info->remote_ip[0],pcon_info->remote_ip[1],
+				pcon_info->remote_ip[2],pcon_info->remote_ip[3]);
+			AIRKISS_LAN_DEBUG("remote port: %d \r\n",pcon_info->remote_port);
+			pairkiss_espconn->proto.udp->remote_port = pcon_info->remote_port;
             break;
     }
 }
@@ -138,6 +147,7 @@ void ICACHE_FLASH_ATTR airkiss_lan_udp_broadcast_link_success_repeat(uint8_t n)
     os_timer_disarm(&lan_udp_timer);
     os_timer_setfn(&lan_udp_timer, (os_timer_func_t *)airkiss_lan_udp_broadcast_tick, NULL);
     os_timer_arm(&lan_udp_timer, 3000, 1);
+//    AIRKISS_LAN_DEBUG("create <lan_udp_timer>!, lan_udp_timer_counter=%d",lan_udp_timer_counter);
 }
 
 /*
@@ -160,7 +170,7 @@ bool ICACHE_FLASH_ATTR airkiss_lan_udp_create(void)
     espconn_regist_recvcb(pairkiss_espconn, airkiss_lan_udp_receive);
     espconn_create(pairkiss_espconn);
 
-    // Set both station and softap can get broadcast, BROADCAST_IF_STATIONAP = 3
+    // Set both station and softap can broadcast UDP packet, BROADCAST_IF_STATIONAP = 3
     wifi_set_broadcast_if(3);
 
 //    airkiss_lan_udp_broadcast_link_success_repeat(10);

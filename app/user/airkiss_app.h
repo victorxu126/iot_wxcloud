@@ -18,9 +18,9 @@
 
 typedef struct mcu_status_t
 {
-        uint8_t status;
-        uint8_t power_switch;
-        uint8_t alpha;
+        uint8_t status;			//airkiss mode
+        uint8_t power_switch;	//led on/off status
+        uint8_t alpha;			//led brightness
 } __attribute__((aligned(1), packed)) mcu_status_t;
 
 typedef struct system_status_t

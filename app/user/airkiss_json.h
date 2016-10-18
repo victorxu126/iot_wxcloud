@@ -16,6 +16,8 @@
 
 int airkiss_json_upload(char * _buf, uint8_t _operation_status, uint8_t _power_switch, uint8_t _alpha);
 int airkiss_json_ask_get(char * _buf, uint64_t _msg_id, char *_user, uint8_t _operation_status, uint8_t _power_switch, uint8_t _alpha);
+int airkiss_json_ask_get_gas(char * _buf, uint64_t _msg_id, char *_user, uint8_t _operation_status);
 int airkiss_json_ask_set(char * _buf, uint64_t _msg_id, uint8_t _operation_status, uint8_t _power_switch, uint8_t _alpha);
+int airkiss_json_ask_set_gas(char * _buf, uint64_t _msg_id, uint8_t _operation_status, uint8_t _gas_switch, uint8_t _alarming);
 
 #endif /* APP_USER_AIRKISS_JSON_H_ */

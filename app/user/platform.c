@@ -30,6 +30,7 @@
 
 LOCAL bool platform_smartlink_done_flag = false;
 LOCAL os_timer_t button_check_timer;
+LOCAL os_timer_t led_check_timer;
 
 void ICACHE_FLASH_ATTR
 platform_network_state_changed(network_state_t current_state)
@@ -129,11 +130,11 @@ platform_init(void)
 {
 	pwm_init(1000, NULL);
 	pwm_add(LIGHT_RED);
-	pwm_add(LIGHT_GREEN);
-	pwm_add(LIGHT_BLUE);
+//	pwm_add(LIGHT_GREEN);
+//	pwm_add(LIGHT_BLUE);
 	pwm_set_duty(0, LIGHT_RED);
-	pwm_set_duty(0, LIGHT_GREEN);
-	pwm_set_duty(0, LIGHT_BLUE);
+//	pwm_set_duty(0, LIGHT_GREEN);
+//	pwm_set_duty(0, LIGHT_BLUE);
 	pwm_start();
 
 	airkiss_app_load();
@@ -142,10 +143,16 @@ platform_init(void)
 	gpio16_output_set(0);
 
 	airkiss_app_button_init();
+	airkiss_app_led_init();
 
 	os_timer_disarm(&button_check_timer);
 	os_timer_setfn(&button_check_timer, (os_timer_func_t *)airkiss_app_button_check, (void *)0);
 	os_timer_arm(&button_check_timer, 10, 1);
+
+	//test gpio funciton
+//	os_timer_disarm(&led_check_timer);
+//	os_timer_setfn(&led_check_timer, (os_timer_func_t *)airkiss_app_led_check, (void *)0);
+//	os_timer_arm(&led_check_timer, 5000, 1);
 
 	network_init(platform_network_state_changed);
 	network_system_timer_callback_register(airkiss_app_start_check);

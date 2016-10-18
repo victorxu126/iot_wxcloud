@@ -60,6 +60,8 @@ void airkiss_app_upload_status();
 
 void airkiss_app_button_check(void);
 void airkiss_app_button_init(void);
+void airkiss_app_led_init(void);
+void airkiss_app_led_check(void);
 void airkiss_app_start_check(uint32_t system_start_seconds);
 int airkiss_app_message_receive(const uint8_t *_data, uint32_t _datalen);
 

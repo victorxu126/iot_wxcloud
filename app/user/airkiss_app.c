@@ -346,16 +346,24 @@ airkiss_app_message_receive(const uint8_t *_data, uint32_t _datalen)
 LOCAL os_timer_t alarm_timer;
 void airkiss_app_apply_settings(void)
 {
+	uint8 close_gas_switch[2]={0x31,0x10};
+	uint8 open_gas_switch[2]={0x31,0x20};
+	uint8 alarming_on[2]={0x31,0x30};
+	//煤气开关
 	if ( local_mcu_status.power_switch == airkiss_power_state_off){
 		GPIO_OUTPUT_SET(GPIO_ID_PIN(LED16_IO_NUM),0);
+		uart0_tx_buffer(close_gas_switch,2);
 	}else{
 		GPIO_OUTPUT_SET(GPIO_ID_PIN(LED16_IO_NUM),1);
+		uart0_tx_buffer(open_gas_switch,2);
 	}
 
+	//报警
 	if(local_mcu_status.alpha ==1){
 		os_timer_disarm(&alarm_timer);
 		os_timer_setfn(&alarm_timer, (os_timer_func_t *)airkiss_app_alarming, (void *)0);
 		os_timer_arm(&alarm_timer, 500, 1);
+		uart0_tx_buffer(alarming_on,2);
 	}else{
 		os_timer_disarm(&alarm_timer);
 		GPIO_OUTPUT_SET(GPIO_ID_PIN(LED4_IO_NUM),0);

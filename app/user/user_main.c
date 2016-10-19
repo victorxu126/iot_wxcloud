@@ -38,8 +38,11 @@ void user_rf_pre_init(void)
 
 void user_init(void)
 {
-    UART_SetPrintPort(0);
-	uart_init(BIT_RATE_115200, BIT_RATE_115200);
+	//cancel uart0 system print info when boot
+	system_uart_swap();
+    UART_SetPrintPort(1);
+	uart_init(BIT_RATE_9600, BIT_RATE_115200);
+	system_uart_de_swap();
 
 	wifi_set_opmode(STATION_MODE);
 
